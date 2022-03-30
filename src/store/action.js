@@ -13,17 +13,17 @@ const listCities = response => ({
 
 const getCity = (city) => {
     return async (dispatch) => {
-      
+
         try {
             const response = await axios.get(apiURL + `mapbox.places/${city}.json?autocomplete=false&access_token=${publicKey}`);
             dispatch(listCities(response.data))
 
-        } catch(e) {
-            const error = {errorMessage: 'Query Not Found'}
+        } catch (e) {
+            const error = { errorMessage: 'Query Not Found' }
             dispatch(listCities(error))
         }
     }
 }
 
 
-export default {Types, getCity}
+export default { Types, getCity }

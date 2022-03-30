@@ -1,13 +1,14 @@
 import React from 'react';
+import './App.css';
+
 import Navbar from '../src/components/Navbar';
 import ItemsList from '../src/components/ItemsList';
-import './App.css';
 
 function App() {
   return (
     <>
       <div id="navbar-container">
-        <Navbar/>
+        <Navbar />
       </div>
       <main id="main-content">
         <ItemsList />

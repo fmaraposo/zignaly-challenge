@@ -16,7 +16,7 @@ const reducer = (state = defaultState, action) => {
             if (query?.length === 0) {
                 newState.city = null
             }
-            else if (features?.length === 0) { 
+            else if (features?.length === 0) {
                 //Query Not Found
                 newState.city.errorMessage = 'Query Not Found'
             }

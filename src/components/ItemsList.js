@@ -20,15 +20,15 @@ const ItemsList = ({ city }) => {
                         <Card className='card-container' key={feature.id}>
                             <CardContent className="card-content">
                                 <p className='card-title'>{feature.place_name}</p>
-                                <ul style={{ padding: 0}}>
-                                   {feature.context?.map((data, index) => {
-                                       //Get the Title and Capitalize first Letter
-                                       const title = data.id.split('.')[0].charAt(0).toUpperCase() + data.id.split('.')[0].slice(1)
+                                <ul style={{ padding: 0 }}>
+                                    {feature.context?.map((data, index) => {
+                                        //Get the Title and Capitalize first Letter
+                                        const title = data.id.split('.')[0].charAt(0).toUpperCase() + data.id.split('.')[0].slice(1)
 
                                         return (
                                             <div key={index}>
                                                 <li className='data-items'>
-                                                    <span  style={{fontWeight: 'bold'}}>{title}:</span> {data.text}
+                                                    <span style={{ fontWeight: 'bold' }}>{title}:</span> {data.text}
                                                 </li>
                                             </div>
                                         )
