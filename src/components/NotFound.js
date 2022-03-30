@@ -5,8 +5,8 @@ const NotFound = ({ errorMessage }) => {
 
     return (
         <div>
-            <img src={Error} alt="Error Message" style={{ cursor: 'pointer' }} />
-            <h1>{errorMessage}</h1>
+            <img src={Error} alt="Error Message" className='not-found-image' />
+            <h1 className='not-found-message'>{errorMessage}</h1>
         </div>
     )
 }

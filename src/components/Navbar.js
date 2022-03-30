@@ -9,7 +9,7 @@ import SearchIcon from '@mui/icons-material/Search';
 const Navbar = ({ getCity }) => {
 
     //To delay the function and avoid multiple requests.
-    const handleCoupon = debounce(async (city) => getCity(city), 1000)
+    const handleCoupon = debounce(async (city) => getCity(city), 500)
 
     return (
         <ul className='navbar'>
